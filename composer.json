@@ -1,0 +1,28 @@
+{
+    "name": "adrotec/webapi-bundle",
+    "type": "symfony-bundle",
+    "description": "Create a JSON WebApi with minimum configuration, targetting several client side libraries, such as breeze js",
+    "keywords": ["api", "webapi", "odata", "rest", "json", "breeze", "breezejs"],
+    "homepage": "http://github.com/adrotec/AdrotecWebApiBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Safraz Razik",
+            "email": "mr.safraz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "jms/serializer-bundle": "~0.13",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2",
+        "adrotec/breeze.server.php": "dev-master"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": { "Adrotec\\WebApiBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Adrotec/WebApiBundle"
+}
