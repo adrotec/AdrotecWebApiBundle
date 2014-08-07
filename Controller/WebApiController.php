@@ -1,6 +1,6 @@
 <?php
 
-namespace Adrotec\BreezeJsBundle\Controller;
+namespace Adrotec\WebApiBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -13,7 +13,7 @@ use Adrotec\BreezeJs\Validator\ValidatorInterceptor;
 //use Symfony\Component\Validator\Validator;
 
 class SerializerInterceptor extends SerializerInterceptorBase {
-    public function getDefaultResourceName($structuralType){
+    public function getDefaultResourceName(\Adrotec\BreezeJs\Metadata\StructuralType $structuralType){
         return $structuralType->shortName;
     }
 }
