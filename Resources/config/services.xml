@@ -10,7 +10,7 @@
         <parameter key="jms_serializer.json_serialization_visitor.class">Adrotec\BreezeJs\Serializer\JsonSerializationVisitor</parameter>
         <parameter key="jms_serializer.camel_case_naming_strategy.class">Adrotec\BreezeJs\Serializer\CamelCaseNamingStrategy</parameter>
         <parameter key="jms_serializer.datetime_handler.class">Adrotec\BreezeJs\Serializer\Handler\DateHandler</parameter>
-        
+        <parameter key="adrotec_webapi.class">Adrotec\BreezeJs\Framework\Application</parameter>
         <!--<parameter key="breezejs.doctrine_subscriber.class">Adrotec\BreezeJs\Serializer\EventSubscriber\BreezeDoctrineSubscriber</parameter>-->
 
     </parameters>
@@ -28,6 +28,13 @@
             <argument type="service" id="doctrine.orm.entity_manager" />
             <tag name="jms_serializer.event_subscriber" />
         </service>-->
+
+        <service id="adrotec_webapi" class="%adrotec_webapi.class%">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument type="service" id="jms_serializer" />
+            <argument type="service" id="validator" />
+        </service>
+
     </services>
-        
+
 </container>

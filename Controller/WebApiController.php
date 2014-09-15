@@ -18,6 +18,10 @@ class SerializerInterceptor extends SerializerInterceptorBase {
     }
 }
 
+/**
+ * @deprecated use the "adrotec_webapi" service instead
+ */
+
 class WebApiController extends Controller {
 
     public function getClientClasses() {
