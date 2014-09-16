@@ -1,6 +1,6 @@
 # AdrotecWebApiBundle
 
-This is a `Symfony 2`bundle to create Web APIs with [breeze.server.php](github.com/adrotec/breeze.server.php)
+This is a `Symfony 2`bundle to create Web APIs with [breeze.server.php](http://github.com/adrotec/breeze.server.php)
 
 ## Usage
 
