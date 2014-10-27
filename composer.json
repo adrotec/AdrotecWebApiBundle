@@ -16,7 +16,7 @@
         "jms/serializer-bundle": "~0.13",
         "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
-        "adrotec/breeze.server.php": "1.0.*"
+        "adrotec/breeze.server.php": "*"
     },
     "require-dev": {
     },
