@@ -1,3 +1,7 @@
+# Project Status:  🚨 Unmaintained 🚨
+
+This project is no longer maintained. We will not be accepting pull requests, addressing issues, nor making future releases.
+
 # AdrotecWebApiBundle
 
 This is a `Symfony 2`bundle to create Web APIs with [breeze.server.php](http://github.com/adrotec/breeze.server.php)
